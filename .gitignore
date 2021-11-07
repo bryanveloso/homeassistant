@@ -1,6 +1,6 @@
-*.log
 *.db
 *.db-*
+*.log*
 *.pem
 
 # Ignore folders.
