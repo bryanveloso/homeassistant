@@ -8,6 +8,14 @@ homeassistant:
 # =============================================================================
 # Custom Configuration 
 
+# Authentication
+auth_providers:
+  - type: homeassistant
+  - type: trusted_networks
+    trusted_networks:
+      - 192.168.0.0/24
+      - 127.0.0.1
+
 # HTTP Configuration
 http:
   use_x_forwarded_for: true
