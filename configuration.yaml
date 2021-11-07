@@ -44,6 +44,6 @@ wake_on_lan:
 # =============================================================================
 # Includes
 
-light: !include configs/lights
+light: !include configs/lights.yaml
 script: !include_dir_merge_list configs/scripts
-scene: !include configs/scenes
+scene: !include configs/scenes.yaml
