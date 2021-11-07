@@ -1,0 +1,12 @@
+- platform: lifx
+- platform: group
+  name: Studio Lights
+  entities:
+    - light.audio_panels
+    - light.backlight
+    - light.ceiling
+    - light.cloud
+    - light.lantern
+    - light.shelf_lamp
+    - light.table_lamp
+    - light.tower_lamp

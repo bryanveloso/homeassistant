@@ -1,0 +1,4 @@
+# Provides access to the custom scenes that can be created in LIFX's mobile app.
+- platform: lifx_cloud
+  token: !secret lifx_token
+  timeout: 30

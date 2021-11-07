@@ -5,5 +5,21 @@ default_config:
 homeassistant:
   customize: !include customize.yaml
 
+# Text-to-Speech
+tts:
+  - platform: google_translate
+
+# HTTP Configuration
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+  - 192.168.88.0/24
+
 # Includes
-scripts: !include_dir_merge_list scripts/
+light: !include configs/lights
+script: !include_dir_merge_list configs/scripts
+scene: !include configs/scenes
+
+# History View Configuration
+recorder:
+  db_url: !secret recorder_db_url
