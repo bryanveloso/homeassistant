@@ -5,9 +5,8 @@ default_config:
 homeassistant:
   customize: !include customize.yaml
 
-# Text-to-Speech
-tts:
-  - platform: google_translate
+# =============================================================================
+# Custom Configuration 
 
 # HTTP Configuration
 http:
@@ -15,11 +14,36 @@ http:
   trusted_proxies:
   - 192.168.88.0/24
 
+# History View Configuration
+history:
+
+# Recorder Configuration
+recorder:
+  db_url: !secret recorder_db_url
+  purge_keep_days: 14
+
+# Speedtest
+speedtestdotnet:
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+# Text-to-Speech
+tts:
+  - platform: google_translate
+
+# Enable the HASS updater
+updater:
+  include_used_components: true
+
+# Wake On LAN Support
+wake_on_lan:
+  broadcast_address: '255.255.255.0'
+
+# =============================================================================
 # Includes
+
 light: !include configs/lights
 script: !include_dir_merge_list configs/scripts
 scene: !include configs/scenes
-
-# History View Configuration
-recorder:
-  db_url: !secret recorder_db_url

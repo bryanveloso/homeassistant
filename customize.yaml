@@ -1,0 +1,11 @@
+# Room: Studio
+light.audio_panels:
+  icon: mdi:led-strip
+light.backlight:
+  icon: mdi:led-strip
+light.ceiling:
+  icon: mdi:led-strip
+light.studio_main_lights:
+  friendly_name: Main Lights
+light.workshop:
+  icon: mdi:lightbulb-fluorescent-tube
