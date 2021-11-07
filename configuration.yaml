@@ -33,10 +33,6 @@ speedtestdotnet:
 tts:
   - platform: google_translate
 
-# Enable the HASS updater
-updater:
-  include_used_components: true
-
 # Wake On LAN Support
 wake_on_lan:
   broadcast_address: '255.255.255.0'
