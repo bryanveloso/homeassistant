@@ -1,4 +1,3 @@
-- platform: lifx
 - platform: group
   name: Studio Lights
   entities:
