@@ -1,0 +1,9 @@
+# Configure a default setup of Hoome Assistant.
+# (Includes frontend, api, etc.)
+default_config:
+
+homeassistant:
+  customize: !include customize.yaml
+
+# Includes
+scripts: !include_dir_merge_list scripts/

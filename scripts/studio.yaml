@@ -1,0 +1,15 @@
+set_studio_lights_to_bias:
+  alias: Set Studio Lights to Bias
+  sequence:
+    - scene: scene.bias
+  mode: single
+set_studio_lights_to_focus:
+  alias: Set Studio Lights to Focus
+  sequence:
+    - scene: scene.focus
+  mode: single
+set_studio_lights_to_intense:
+  alias: Set Studio Lights to Intense
+  sequence:
+    - scene: scene.intense
+  mode: single
