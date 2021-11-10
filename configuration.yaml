@@ -26,6 +26,7 @@ history:
 # InfluxDB Integration
 influxdb:
   api_version: 2
+  ssl: false
   host: 192.168.88.69
   port: 8086
   token: !secret influxdb_api_token
