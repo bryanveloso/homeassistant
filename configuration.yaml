@@ -25,13 +25,17 @@ history:
 
 # InfluxDB Integration
 influxdb:
-  host: a0d7b954-influxdb
+  api_version: 2
+  host: 192.168.88.69
   port: 8086
-  database: homeassistant
-  username: homeassistant
-  password: !secret influxdb_password
-  max_retries: 3
-  default_measurement: state
+  token: !secret influxdb_api_token
+  organization: 13b5362f25cf7ebb
+  bucket: homeassistant
+  tags:
+    source: HA
+  tags_attributes:
+    - friendly_name
+  default_measurement: units
 
 # MQTT Broker Configuration
 mqtt:
