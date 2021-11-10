@@ -46,6 +46,7 @@ wake_on_lan:
 # =============================================================================
 # Includes
 
+automation: !include configs/automation.yaml
 light: !include configs/lights.yaml
 script: !include configs/scripts.yaml
 scene: !include configs/scenes.yaml
