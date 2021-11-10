@@ -1,0 +1,11 @@
+ - platform: mqtt
+   name: tesla_latitude
+   state_topic: "teslamate/cars/1/latitude"
+   unit_of_measurement: °
+   icon: mdi:crosshairs-gps
+
+ - platform: mqtt
+   name: tesla_longitude
+   state_topic: "teslamate/cars/1/longitude"
+   unit_of_measurement: °
+   icon: mdi:crosshairs-gps

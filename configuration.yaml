@@ -27,6 +27,15 @@ history:
 mqtt:
   broker: 192.168.88.69
 
+# Proximity Configuration (for the Tesla)
+proximity:
+  home_tesla:
+    zone: home
+    devices:
+      - device_tracker.tesla_location
+    tolerance: 10
+    unit_of_measurement: mi
+
 # Recorder Configuration
 recorder:
   db_url: !secret recorder_db_url
@@ -54,3 +63,4 @@ automation: !include configs/automations.yaml
 light: !include configs/lights.yaml
 script: !include configs/scripts.yaml
 scene: !include configs/scenes.yaml
+sensor: !include_dir_merge_list configs/sensors/
