@@ -12,6 +12,5 @@
         gps:
           [
             "{{ states.sensor.tesla_latitude.state }}",
-            "{{ states.sensor.tesla_longitude.state }}"
+            "{{ states.sensor.tesla_longitude.state }}",
           ]
-  
