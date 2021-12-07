@@ -79,3 +79,4 @@ light: !include configs/lights.yaml
 script: !include configs/scripts.yaml
 scene: !include configs/scenes.yaml
 sensor: !include_dir_merge_list configs/sensors/
+switch: !include configs/switches.yaml
