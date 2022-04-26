@@ -16,6 +16,16 @@ set_studio_lights_to_intense:
   mode: single
 
 # LG C1 OLED Control
+switch_lgc1_off:
+  alias: Power Off LG C1
+  sequence:
+    - service: media_player.turn_off
+      entity_id: media_player.lg_c1
+switch_lgc1_on:
+  alias: Power On LG C1
+  sequence:
+    - service: media_player.turn_on
+      entity_id: media_player.lg_c1
 switch_lgc1_to_extron:
   alias: Switch LG C1 to Extron
   sequence:
@@ -46,6 +56,16 @@ switch_lgc1_to_vrroom:
   mode: single
 
 # HDFury VRRoom Control
+vrroom_hotplug:
+  alias: Trigger VRRoom Hotplug
+  sequence:
+  - service: rest_command.vrroom_hotplug
+  mode: single
+vrroom_reboot:
+  alias: Trigger VRRoom Reboot
+  sequence:
+  - service: rest_command.vrroom_reboot
+  mode: single
 vrroom_rx0:
   alias: Switch VRRoom to RX0
   sequence:
