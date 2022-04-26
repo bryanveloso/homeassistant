@@ -40,7 +40,7 @@ switch_lgc1_to_vrroom:
   sequence:
     - service: media_player.select_source
       data:
-        source: Apple TV
+        source: HDMI 2
       target:
         device_id: 81b76b7173f6fead5afc04f1713eac21
   mode: single
