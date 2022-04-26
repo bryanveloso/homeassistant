@@ -14,3 +14,12 @@
             "{{ states.sensor.tesla_latitude.state }}",
             "{{ states.sensor.tesla_longitude.state }}",
           ]
+
+- alias: Turn on LG C1
+  trigger:
+    - platform: webostv.turn_on
+      entity_id: media_player.lg_c1
+  action:
+    - service: wake_on_lan.send_magic_packet
+      data:
+        mac: !secret mac_address_lg_c1
