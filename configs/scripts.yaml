@@ -1,3 +1,4 @@
+# LIFX Lighting Control
 set_studio_lights_to_bias:
   alias: Set Studio Lights to Bias
   sequence:
@@ -12,4 +13,34 @@ set_studio_lights_to_intense:
   alias: Set Studio Lights to Intense
   sequence:
     - scene: scene.intense
+  mode: single
+
+# LG C1 OLED Control
+switch_lgc1_to_extron:
+  alias: Switch LG C1 to Extron
+  sequence:
+    - service: media_player.select_source
+      data:
+        source: Extron
+      target:
+        device_id: 81b76b7173f6fead5afc04f1713eac21
+  mode: single
+  icon: mdi:television
+switch_lgc1_to_pc:
+  alias: Switch LG C1 to PC
+  sequence:
+    - service: media_player.select_source
+      data:
+        source: PC
+      target:
+        device_id: 81b76b7173f6fead5afc04f1713eac21
+  mode: single
+switch_lgc1_to_vrroom:
+  alias: Switch LG C1 to VRRoom
+  sequence:
+    - service: media_player.select_source
+      data:
+        source: Apple TV
+      target:
+        device_id: 81b76b7173f6fead5afc04f1713eac21
   mode: single
