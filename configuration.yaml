@@ -71,6 +71,21 @@ tts:
 wake_on_lan:
   broadcast_address: '255.255.255.0'
 
+# RESTful Commands
+rest_command:
+  vrroom_rx0: 
+    url: "http://vrroom-23.local/cmd?insel=0"
+  vrroom_rx1:
+    url: "http://vrroom-23.local/cmd?insel=1"
+  vrroom_rx2:
+    url: "http://vrroom-23.local/cmd?insel=2"
+  vrroom_rx3:
+    url: "http://vrroom-23.local/cmd?insel=3"
+  vrroom_hotplug:
+    url: "http://vrroom-23.local/cmd?hotplug=1"
+  vrroom_reboot:
+    url: "http://vrroom-23.local/cmd?reboot=1"
+
 # =============================================================================
 # Includes
 
