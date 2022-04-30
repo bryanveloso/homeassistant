@@ -57,32 +57,40 @@ switch_lgc1_to_vrroom:
 
 # HDFury VRRoom Control
 vrroom_hotplug:
-  alias: Trigger VRRoom Hotplug
+  alias: "[VRRoom] Hotplug"
   sequence:
   - service: rest_command.vrroom_hotplug
   mode: single
 vrroom_reboot:
-  alias: Trigger VRRoom Reboot
+  alias: "[VRRoom] Reboot"
   sequence:
   - service: rest_command.vrroom_reboot
   mode: single
 vrroom_rx0:
-  alias: Switch VRRoom to RX0
+  alias: "[VRRoom] Switch to RX0"
   sequence:
   - service: rest_command.vrroom_rx0
   mode: single
 vrroom_rx1:
-  alias: Switch VRRoom to RX1
+  alias: "[VRRoom] Switch to RX1"
   sequence:
   - service: rest_command.vrroom_rx1
   mode: single
 vrroom_rx2:
-  alias: Switch VRRoom to RX2
+  alias: "[VRRoom] Switch to RX2"
   sequence:
   - service: rest_command.vrroom_rx2
   mode: single
 vrroom_rx3:
-  alias: Switch VRRoom to RX3
+  alias: "[VRRoom] Switch to RX3"
   sequence:
   - service: rest_command.vrroom_rx3
   mode: single
+vrroom_force_earc:
+  alias: "[VRRoom] Force eARC"
+  sequence:
+  - service: rest_command.vrroom_force_earc
+vrroom_force_hdmi:
+  alias: "[VRRoom] Force HDMI"
+  sequence:
+  - service: rest_command.vrroom_force_hdmi

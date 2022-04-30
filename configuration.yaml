@@ -73,6 +73,10 @@ wake_on_lan:
 
 # RESTful Commands
 rest_command:
+  vrroom_force_earc:
+    url: "http://192.168.88.42/cmd?earcforce=1"
+  vrroom_force_hdmi:
+    url: "http://192.168.88.42/cmd?earcforce=2"
   vrroom_hotplug:
     url: "http://192.168.88.42/cmd?hotplug=1"
   vrroom_reboot:
